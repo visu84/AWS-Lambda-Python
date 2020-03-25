@@ -2,6 +2,7 @@
 #Prefix here is the loggroup name itself but replacing / with - Ex: /aws/lambda/test will have a prefix as aws-lambda-test
 #Mention all the required loggroups in the array at line 18
 #Provide the s3 bukcet name in line 29
+#Make sure you choose the lambda timout value basedon the number of loggroups to be included
 import boto3
 import json
 import collections
