@@ -1,4 +1,5 @@
-#This function will list all EIPs from all region for this account
+#This function will list all EIPs from all region for this account, please note this will list only EIPs owned/assigned to this account
+#but not any dynamic public IPs attached to instances
 #Note--- Please change the default timout period for the lambda function to atleast 3 mins
 
 import json
