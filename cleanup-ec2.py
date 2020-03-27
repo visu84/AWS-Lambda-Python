@@ -12,7 +12,7 @@ ec2 = boto3.resource('ec2')
 def lambda_handler(event, context):
     reservations = ec.describe_instances(
         Filters=[
-            {'Name': 'tag:AppCluster', 'Values': ['sync-prod-us-east-1']},
+            {'Name': 'tag:environme t', 'Values': ['production']},
             { 'Name': 'instance-state-name','Values': ['running'] }
         ]
         ).get(
